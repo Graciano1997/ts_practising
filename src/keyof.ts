@@ -5,7 +5,7 @@ interface Persons{
     age: number;
 }
 
-function printPersonProperty(person: Persons, property: keyof Persons){
+function printPersonProperty (person: Persons, property: keyof Persons) {
     console.log(`The Person ${ property} is ${person[property]}`);
 }
 
@@ -14,4 +14,12 @@ let persons ={
     age:27
 }
 
-printPersonProperty(persons,"age");
+printPersonProperty(persons,"names");
+
+type stringMap={[key:string]: unknown};
+
+function createStringPair(property: keyof stringMap, value: unknown): stringMap{
+    return {[property]: value}
+}
+
+console.log(createStringPair("number",12));
