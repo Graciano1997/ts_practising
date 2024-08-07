@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TypeScript Exerc</title>
 </head>
 <style>
+    form{
+        padding: 15px; column-gap: 30px; width: 400px; height: 200px; display: grid; box-shadow: 0 0 20px 8px black; align-items: center; justify-items: center; grid-template-columns: 200px 50px 100px; background-color: rgba(247, 123, 123, 0.767);
+    }
 
     .operators {
         display: flex; flex-direction: column; margin-top: 1rem;  justify-content: space-around; height: 100%;
@@ -25,12 +28,16 @@
     text-align: center; margin-top:15rem;
     }
 
+    .calcSection{
+        display:flex; align-items:center; justify-content:center;
+    }
+
 </style>
 <body>
-    <h1>TypeScript Calculator</h1>
-    <section style="display:flex; align-items:center; justify-content:center">
+    <h1>TypeScript Basic Calculator</h1>
+    <section class="calcSection">
         <div>
-            <form id="calcForm" style="padding: 15px; column-gap: 30px; width: 400px; height: 200px; display: grid; box-shadow: 0 0 20px 8px black; align-items: center; justify-items: center; grid-template-columns: 200px 50px 100px; background-color: rgba(247, 123, 123, 0.767);">
+            <form id="calcForm">
                 <div>
                     <label>
                         <p>First Number</p>
