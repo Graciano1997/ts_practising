@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TypeScript Calculator</h1>
+    <section style="display:flex; align-items:center; justify-content:center">
+        <div>
+            <form id="calcForm" style="padding: 15px; column-gap: 30px; width: 400px; height: 200px; display: grid; box-shadow: 0 0 20px 8px black; align-items: center; justify-items: center; grid-template-columns: 200px 50px 100px; background-color: rgba(247, 123, 123, 0.767);">
+                <div>
+                    <label>
+                        <p>First Number</p>
+                        <input type="number" id="first">
+                    </label>
+                    <label>
+                        <p>Second Number</p>
+                        <input type="number" id="second">
+                    </label>
+                </div>
+
+                <div style="display: flex; flex-direction: column; margin-top: 1rem;  justify-content: space-around; height: 100%;">
+                    <button type="button" id="plus" style="padding: 10px; border: transparent; background-color:lightpink; border-radius: 8px; outline: black;">+</button>
+                    <button type="button" id="minus" style="padding: 10px; border: transparent; background-color:lightpink; border-radius: 8px;">-</button>
+                    <button type="button" id="time" style="padding: 10px; border: transparent; background-color:lightpink; border-radius: 8px;">x</button>
+                    <button type="button" id="devide" style="padding: 10px; border: transparent; background-color:lightpink; border-radius: 8px;">/</button>
+                </div>
+                <div style="display: flex; justify-content: center; height: 100%; width: 100%; align-items: center; color: white; font-size: 28px; font-family: Arial, Helvetica, sans-serif; font-weight: 700;">
+                    <p id="result" style="box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.336); background-color: transparent; border-radius: 8px;">55</p>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script type="module" src="./dist/index.js"></script>
+</body>
+</html>
